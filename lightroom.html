@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PSD to HTML5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"> <!-- character encoding -->
+    <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1"> <!-- Display webpage in edge mode/IE in highest supported document mode -->
+    <meta name=viewport content="width=device-width, initial-scale=1"> <!-- Optimizations for mobile devices -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" </script> <![endif]-->
+</head>
+
+<body>
+
+    <section id="resume">
+        <div class="container">
+            <ul style="background-color: brown solid" >
+                    <li><a style="color:red " href="index.html">HOME</a></li>
+               </ul>
+            <h2 class="page_heading">PHOTOGRAPHY</h2>
+
+
+<!-- Images used to open the lightbox -->
+<div class="row3">
+  <div class="column2">
+    <img src="./img/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column2">
+    <img src="./img/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column2">
+    <img src="./img/5.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column2">
+    <img src="./img/10.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column2">
+    <img src="./img/11.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column2">
+    <img src="./img/12.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+  <div class="column2">
+    <img src="./img/6.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow">
+  </div>
+  <div class="column2">
+    <img src="./img/9.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+  </div>
+  <div class="column2">
+    <img src="./img/13.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 9</div>
+      <img src="./img/1.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 9</div>
+      <img src="./img/2.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 9</div>
+      <img src="./img/5.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 9</div>
+      <img src="./img/10.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 9 </div>
+      <img src="./img/11.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">6 / 9</div>
+      <img src="./img/12.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 9</div>
+      <img src="./img/6.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 9</div>
+      <img src="./img/9.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 9</div>
+      <img src="./img/13.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <div class="controls">
+    <a style="float: left;" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column2">
+      <img class="demo" src="./img/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column2">
+      <img class="demo" src="./img/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column2">
+      <img class="demo" src="./img/5.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column2">
+      <img class="demo" src="./img/10.jpg" style="width:100%" onclick="currentSlide(4)" alt="Lights">
+    </div>
+    <div class="column2">
+      <img class="demo" src="./img/11.jpg" style="width:100%" onclick="currentSlide(5)" alt="Lights">
+    </div>
+    <div class="column2">
+      <img class="demo" src="./img/12.jpg" style="width:100%" onclick="currentSlide(6)" alt="Lights">
+    </div>
+    
+    <div class="column2">
+      <img class="demo" src="./img/6.jpg" style="width:100%" onclick="currentSlide(7)" alt="Lights">
+    </div>
+    <div class="column2">
+      <img class="demo" src="./img/9.jpg" style="width:100%" onclick="currentSlide(8)" alt="Lights">
+    </div>
+    <div class="column2">
+      <img class="demo" src="./img/13.jpg" style="width:100%" onclick="currentSlide(9)" alt="Lights">
+    </div>
+    
+  </div>
+</div>
+
+
+        </div>
+    </section>
+    
+    <!--Jquery first,then javascipt-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
