@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+ /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -142,14 +142,6 @@ h1 {
 /* end reset */
 
 /*helper class begin */
-/*.alighnleft  {
-    float: left;
-    
-}
-.alighnright{
-    float: right
-}*/
-
 .margin-bottom-10 {
 
     margin-bottom: 10px;
@@ -173,17 +165,6 @@ ol li {
     margin-bottom: 20px;
 }
 
-/*helper class end */
-/*GENERAL RULES*/
-
-@font-face {
-    font-family: "HelvetcaNaue-Thin"
-}
-
-*box {
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -199,20 +180,12 @@ body {
 }
 
 #hero {
-    background-image: url('../img/20190118_184543.jpeg');
+    background-image: url('../img/art-artistic-blur-2080967.jpg');
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
 
 }
-
-/*.navbar li
-{    
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-    position: relative;
-}*/
 
 .navbar li {
 
@@ -228,6 +201,7 @@ body {
 }
 
 .navbar li a {
+    font-weight: bold;
     color: white;
     text-decoration: none;
     margin-left: 30px;
@@ -257,11 +231,14 @@ body {
     padding-bottom: 40px;
     text-align: center;
     color: white;
-
+    font-weight: bolder;
+    font-size: 30px;
 
 }
 
 social_m {
+    border-color: aliceblue;
+    color: aliceblue;
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
@@ -275,6 +252,7 @@ social_m {
 
 }
 
+
 .social_m img {
 
     width: 4%;
@@ -285,16 +263,12 @@ social_m {
 
 /*PROJECT PAGE*/
 
-/*#projects .container2 {
-    text-align: center;
-    padding: 100px 60px;
 
-}*/
 
 #projects {
     margin: 30px 0px 30px 0px;
     height: 1000px;
-    background-image: url('../img/analysis-coffee-copy-space-1488034.jpg');
+    background-image: url('../img/architecture-background-black-and-white-247719.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -352,7 +326,8 @@ img_box {
 
 
 .page_heading {
-    font-weight: bold;
+    font-weight: bolder;
+
     text-align: center;
     font-size: 30px;
     color: aliceblue;
@@ -388,7 +363,7 @@ img_box {
 #about {
     margin: 30px 0px 30px 0px;
     height: 1000px;
-    background-image: url(../img/analysis-business-people-coffee-1547470.jpg);
+    background-image: url(../img/background-clouds-color-1040474.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -396,13 +371,6 @@ img_box {
     text-align: center;
 }
 
-/*#about{
-    background: url(/img/analysis-coffee-copy-space-1488034.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}*/
 
 #about container {
 
@@ -425,17 +393,20 @@ img_box {
 }
 
 .text {
+    color: aliceblue;
     margin: 20px 20px 20px 20px;
     text-align: left;
-    font-size: 29px;
+    font-size: 31px;
 }
 
 .text p {
-    padding: 20px;
-    font-size: 20px
+    color: aliceblue;
+    padding: 18px;
+    font-size: 23px
 }
 
 .details {
+    color: aliceblue;
     text-align: left;
 
 }
@@ -449,6 +420,7 @@ img_box {
 .skills_m {
     margin: 100px 0px 10px 10px;
     width: 100%;
+
     /* Full width */
     /*background-color: #ddd;  Grey background */
 
@@ -456,6 +428,7 @@ img_box {
 
 .skills_m p {
     text-align: left;
+    color: aliceblue;
 }
 
 .box {
@@ -475,30 +448,35 @@ img_box {
 }
 
 .python {
+    color: aliceblue;
     width: 76%;
     background-color: #4CAF50;
 }
 
 /* Green */
 .mysql {
+    color: aliceblue;
     width: 85%;
     background-color: #2196F3;
 }
 
 /* Blue */
 .data {
+    color: aliceblue;
     width: 90%;
     background-color: #f44336;
 }
 
 /* Red */
 .power {
+    color: aliceblue;
     width: 60%;
     background-color: #808080;
 }
 
 /* Dark Grey */
 .web {
+    color: aliceblue;
     width: 55%;
     background-color: orchid;
 }
@@ -540,11 +518,7 @@ row2 {
     color: white;
     margin: 2px;
 }
-
-/*.column {
-    background-color: aqua;
-    opacity: 0.5;
-}*/
+ 
 .column {
 
     /* border: 1px solid grey;*/
@@ -613,7 +587,7 @@ row2 {
 #contact {
     margin: 30px 0px 30px 0px;
     height: 1000px;
-    background-image: url(../img/7-1.png );
+    background-image: url(../img/background-black-colors-952670.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
