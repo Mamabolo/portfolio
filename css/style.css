@@ -802,3 +802,14 @@ img.hover-shadow {
     margin-right: 100%;
 
 }
+
+.error{
+    color: red;  
+}
+
+.success{
+    font-size: 15px;
+    font-weight: bold;
+    color: limegreen;
+    text-align: center;
+}
