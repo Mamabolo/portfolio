@@ -1,8 +1,13 @@
+const functions = require('firebase-functions');
+const admin = require('firebase-admin');
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const nodemailer = require('nodemailer');
+
+admin.initializeApp();
 
 const app = express();
 
@@ -70,3 +75,52 @@ app.post('/send', (req, res) => {
   });
 
 app.listen(3000, () => console.log('Server started...'));
+
+// nodemailer send to email function
+
+function sendmail(name, email, subject, message){
+
+  var transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true, 
+    auth: {
+      user: "zulacker.com@gmail.com",
+      pass: "zulacker5" 
+    }
+  });
+
+  // Mail sender transport object
+  transporter.sendMail({
+    from: "zulacker.com@gmail.com", 
+    to: "magdel.mamabolo@younglings.africa", 
+    subject: "Firebase Message",
+    html: `
+    <p><b>Name</b><p>
+    ${name}
+    <p><b>Email</b><p>
+    ${email}
+    <p><b>Subject</b><p>
+    ${subject}
+    <p><b>Message</b><p>
+    ${message}
+     
+    `
+  });
+
+ 
+}
+
+
+exports.sendToMyEmail = functions.database.ref('/messages/{pushId}')
+    .onCreate((snapshot, context) => {
+
+      const original = snapshot.val();
+      var name = original.name;
+      var email = original.email;
+      var subject = original.subject;
+      var message = original.message;
+
+      sendmail( name, email, subject, message);
+      return null;
+    });
